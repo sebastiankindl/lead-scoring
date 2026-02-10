@@ -1,6 +1,10 @@
 import time
 import pandas as pd
 import streamlit as st
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from engine import normalize_url, fetch_html, extract_context_texts, score_lead
 
